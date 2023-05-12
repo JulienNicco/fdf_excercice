@@ -17,6 +17,7 @@ class SelectorViewModel: ObservableObject {
     @Published var filteredLeagues: [LeagueModel]
     @Published var selectedLeague: LeagueModel?
     @Published var searchText = ""
+    @Published var isLoading = false
     
     init(leagueRepository: LeagueRepository = LeagueRepository(),
          teamRepository: TeamRepository = TeamRepository(),
@@ -55,15 +56,12 @@ class SelectorViewModel: ObservableObject {
     }
     
     func refreshLeague() {
+        isLoading = true
         self.leagueRepo.getAll()
             .receive(on: RunLoop.main)
-            .sink { result in
-            switch result {
-            case .failure(let error):
-                print("Debug - error : \(error)")
-            case .finished:
-                print("Debug - finished")
-            }
+            .sink { [weak self] result in
+                guard let self = self else { return }
+                self.isLoading = false
         } receiveValue: { [weak self] leagues in
             guard let self = self else { return }
             self.allLeagues = leagues
@@ -73,18 +71,17 @@ class SelectorViewModel: ObservableObject {
     }
     
     func getTeams(for league:LeagueModel) {
+        isLoading = true
         self.teamRepo.getByLeague(league)
             .receive(on: RunLoop.main)
-            .sink { result in
-            switch result {
-            case .failure(let error):
-                print("Debug - error : \(error)")
-            case .finished:
-                print("Debug - finished")
-            }
+            .sink { [weak self] result in
+                guard let self = self else { return }
+                self.isLoading = false
         } receiveValue: { [weak self] team in
             guard let self = self else { return }
-            self.teams = team
+            self.teams = team.enumerated()
+                .filter { $0.offset % 2 == 1 }
+                .map { $0.element }
         }
         .store(in: &cancellable)
     }

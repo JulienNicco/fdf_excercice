@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct SelectorView: View {
     @StateObject var vm: SelectorViewModel
@@ -13,20 +14,21 @@ struct SelectorView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                if let _ = vm.selectedLeague {
-                    teamsList()
+                if vm.isLoading {
+                    ProgressView()
+                } else if let _ = vm.selectedLeague {
+                    teamsListView()
                 } else {
                     if vm.searchText.count >= 3 {
-                        leaguesSuggestionList()
+                        leaguesSuggestionListView()
                     }
                 }
             }
-            .navigationTitle(Strings.titleScreenLeagueSelector)
         }
         .searchable(text: $vm.searchText, prompt: Strings.placeHolderSearchBar)
     }
     
-    func leaguesSuggestionList() -> some View {
+    func leaguesSuggestionListView() -> some View {
         ScrollView {
             ForEach(vm.filteredLeagues, id: \.self) { league in
                 Button {
@@ -45,21 +47,37 @@ struct SelectorView: View {
         }
     }
     
-    func teamsList() -> some View {
+    func teamsListView() -> some View {
         ScrollView {
-            ForEach(vm.teams, id: \.self) { team in
-                NavigationLink {
-                    DetailTeamView(team:team)
-                } label: {
-                    VStack (alignment: .leading){
-                        Text(team.strTeam)
-                        Spacer()
-                    }
-                    .frame(maxWidth: .infinity)
+            let columns = Array(repeating: GridItem(.flexible(), spacing: 15, alignment: .center), count: 2)
+            LazyVGrid(columns: columns,spacing: 15) {
+                ForEach(vm.teams, id:\.self) { team in
+                    WebImage(url: URL(string: team.strTeamBadge))
+                        .resizable()
+                        .placeholder{Image(systemName: "photo").resizable().scaledToFit()}
+                        .indicator(.activity)
+                        .aspectRatio(contentMode: .fit)
                 }
             }
+            .padding(.horizontal, 15)
         }
     }
+    
+//    func teamsListView() -> some View {
+//        ScrollView {
+//            ForEach(vm.teams, id: \.self) { team in
+//                NavigationLink {
+//                    DetailTeamView(team:team)
+//                } label: {
+//                    VStack (alignment: .leading){
+//                        Text(team.strTeam)
+//                        Spacer()
+//                    }
+//                    .frame(maxWidth: .infinity)
+//                }
+//            }
+//        }
+//    }
 }
 
 struct LeagueSelectorView_Previews: PreviewProvider {
