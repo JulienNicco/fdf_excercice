@@ -1,5 +1,5 @@
 //
-//  TeamSelectorView.swift
+//  DetailTeamView.swift
 //  FDJ-Excercice
 //
 //  Created by Julien Nicco on 12/05/2023.
@@ -7,7 +7,9 @@
 
 import SwiftUI
 
-struct TeamSelectorView: View {
+struct DetailTeamView: View {
+    var team:TeamModel
+    
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -19,8 +21,8 @@ struct TeamSelectorView: View {
     }
 }
 
-struct TeamSelectorView_Previews: PreviewProvider {
+struct DetailTeamView_Previews: PreviewProvider {
     static var previews: some View {
-        TeamSelectorView()
+        DetailTeamView(team:TeamModel())
     }
 }

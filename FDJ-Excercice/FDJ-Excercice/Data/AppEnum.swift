@@ -15,7 +15,7 @@ enum HTTPMethod: String {
 enum ApiUrl: String {
     case baseUrl = "https://www.thesportsdb.com/api/v1/json/50130162/"
     case league = "all_leagues.php"
-    case team = "search_all_teams.php"
+    case team = "lookup_all_teams.php"
     
     var stringUrl: String {
         switch self {

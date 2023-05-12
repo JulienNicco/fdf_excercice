@@ -4,14 +4,14 @@
 ##   Every input/output paths in the rest of the config will then be expressed relative to these.
 ##   Those two top-level keys are optional and default to "." (the directory of the config file).
  input_dir: FDJ-Excercice/
- output_dir: FDJ-Excercice/SwiftGen/
+ output_dir: FDJ-Excercice/Configuration/SwiftGen/
 
 
 ## Generate constants for your localized strings.
 ##   Be sure that SwiftGen only parses ONE locale (typically Base.lproj, or en.lproj, or whichever your development region is); otherwise it will generate the same keys multiple times.
 ##   SwiftGen will parse all `.strings` files found in that folder.
  strings:
-  inputs: en.lproj
+  inputs: Configuration/en.lproj
   outputs:
     templateName: structured-swift5
     params: 

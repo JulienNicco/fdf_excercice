@@ -13,7 +13,6 @@ struct AppNetwork {
         guard let url = URL(string: request.url.stringUrl) else {
             return Fail(error: NSError(domain: "Invalid URL", code: 0, userInfo: nil)).eraseToAnyPublisher()
         }
-        print("Debug - URL : \(url.absoluteString)")
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = request.method.rawValue
         
@@ -23,7 +22,7 @@ struct AppNetwork {
                     return "\(key)=\(value)"
                 }.joined(separator: "&")
                 
-                urlRequest.url = URL(string: "\(request.url)?\(urlParameters)")
+                urlRequest.url = URL(string: "\(url)?\(urlParameters)")
             } else {
                 do {
                     let jsonData = try JSONSerialization.data(withJSONObject: parameters, options: [])
@@ -33,6 +32,8 @@ struct AppNetwork {
                 }
             }
         }
+        
+        print("Debug - URL : \(urlRequest.url?.absoluteString)")
         
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
             .mapError { error -> Error in
