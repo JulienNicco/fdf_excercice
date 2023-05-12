@@ -36,6 +36,7 @@ class SelectorViewModel: ObservableObject {
             guard let self = self else { return }
             if newValue.isEmpty {
                 self.filteredLeagues = self.allLeagues
+                self.selectedLeague = nil
             } else {
                 self.filteredLeagues = self.allLeagues.filter { $0.strLeague.lowercased().contains(newValue.lowercased()) }
             }

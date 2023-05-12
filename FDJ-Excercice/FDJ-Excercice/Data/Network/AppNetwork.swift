@@ -33,7 +33,7 @@ struct AppNetwork {
             }
         }
         
-        print("Debug - URL : \(urlRequest.url?.absoluteString)")
+        print("Debug - URL : \(String(describing: urlRequest.url?.absoluteString))")
         
         return URLSession.shared.dataTaskPublisher(for: urlRequest)
             .mapError { error -> Error in
@@ -41,8 +41,6 @@ struct AppNetwork {
             }
             .flatMap { data, response -> AnyPublisher<Data, Error> in
                 guard let httpResponse = response as? HTTPURLResponse, !(200...299).contains(httpResponse.statusCode) else {
-                    let stringData = String(decoding: data, as: UTF8.self)
-                    print("Debug - response : \(stringData)")
                     return Just(data).setFailureType(to: Error.self).eraseToAnyPublisher()
                 }
                 print("Debug - response error : \(httpResponse.statusCode)")

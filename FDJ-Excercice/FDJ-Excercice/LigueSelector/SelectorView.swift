@@ -12,40 +12,50 @@ struct SelectorView: View {
     
     var body: some View {
         NavigationStack {
-            ZStack {
-                teamsList()
-                if vm.searchText.count >= 3 {
-                    leaguesSuggestionList()
+            VStack {
+                if let _ = vm.selectedLeague {
+                    teamsList()
+                } else {
+                    if vm.searchText.count >= 3 {
+                        leaguesSuggestionList()
+                    }
                 }
             }
             .navigationTitle(Strings.titleScreenLeagueSelector)
         }
-        .searchable(text: $vm.searchText)
+        .searchable(text: $vm.searchText, prompt: Strings.placeHolderSearchBar)
     }
     
     func leaguesSuggestionList() -> some View {
-        VStack {
-            ScrollView {
-                ForEach(vm.filteredLeagues, id: \.self) { league in
-                    Button {
-                        vm.selectedLeague = league
-                    } label: {
+        ScrollView {
+            ForEach(vm.filteredLeagues, id: \.self) { league in
+                Button {
+                    vm.selectedLeague = league
+                } label: {
+                    HStack {
                         Text(league.strLeague)
+                        Spacer()
                     }
+                    .frame(maxWidth: .infinity)
+                    .padding(.vertical, 2)
                 }
+                .padding(.horizontal, 15)
+                .buttonStyle(.plain)
             }
         }
     }
     
     func teamsList() -> some View {
-        VStack {
-            ScrollView {
-                ForEach(vm.teams, id: \.self) { team in
-                    NavigationLink {
-                        DetailTeamView(team:team)
-                    } label: {
+        ScrollView {
+            ForEach(vm.teams, id: \.self) { team in
+                NavigationLink {
+                    DetailTeamView(team:team)
+                } label: {
+                    VStack (alignment: .leading){
                         Text(team.strTeam)
+                        Spacer()
                     }
+                    .frame(maxWidth: .infinity)
                 }
             }
         }
