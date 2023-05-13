@@ -19,26 +19,22 @@
 		3B745A782A0E3CCE00D4C61C /* FDJ_ExcerciceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A772A0E3CCE00D4C61C /* FDJ_ExcerciceTests.swift */; };
 		3B745A822A0E3CCE00D4C61C /* FDJ_ExcerciceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A812A0E3CCE00D4C61C /* FDJ_ExcerciceUITests.swift */; };
 		3B745A842A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A832A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift */; };
-		3B745A932A0E411300D4C61C /* LeagueSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A922A0E411300D4C61C /* LeagueSelectorView.swift */; };
-		3B745A942A0E411300D4C61C /* LeagueSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A922A0E411300D4C61C /* LeagueSelectorView.swift */; };
-		3B745A962A0E417700D4C61C /* TeamSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A952A0E417700D4C61C /* TeamSelectorView.swift */; };
-		3B745A972A0E417700D4C61C /* TeamSelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A952A0E417700D4C61C /* TeamSelectorView.swift */; };
+		3B745A932A0E411300D4C61C /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A922A0E411300D4C61C /* SelectorView.swift */; };
+		3B745A942A0E411300D4C61C /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A922A0E411300D4C61C /* SelectorView.swift */; };
 		3B745A9A2A0E433500D4C61C /* AppNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A992A0E433500D4C61C /* AppNetwork.swift */; };
 		3B745A9B2A0E433500D4C61C /* AppNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A992A0E433500D4C61C /* AppNetwork.swift */; };
-		3B745A9D2A0E435F00D4C61C /* LeagueSelectorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9C2A0E435F00D4C61C /* LeagueSelectorRepository.swift */; };
-		3B745A9E2A0E435F00D4C61C /* LeagueSelectorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9C2A0E435F00D4C61C /* LeagueSelectorRepository.swift */; };
-		3B745AA02A0E437100D4C61C /* TeamSelectorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9F2A0E437100D4C61C /* TeamSelectorRepository.swift */; };
-		3B745AA12A0E437100D4C61C /* TeamSelectorRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9F2A0E437100D4C61C /* TeamSelectorRepository.swift */; };
-		3B745AA32A0E43D600D4C61C /* LeagueSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AA22A0E43D600D4C61C /* LeagueSelectorViewModel.swift */; };
-		3B745AA42A0E43D600D4C61C /* LeagueSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AA22A0E43D600D4C61C /* LeagueSelectorViewModel.swift */; };
-		3B745AA62A0E43E600D4C61C /* TeamSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AA52A0E43E600D4C61C /* TeamSelectorViewModel.swift */; };
-		3B745AA72A0E43E600D4C61C /* TeamSelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AA52A0E43E600D4C61C /* TeamSelectorViewModel.swift */; };
+		3B745A9D2A0E435F00D4C61C /* LeagueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9C2A0E435F00D4C61C /* LeagueRepository.swift */; };
+		3B745A9E2A0E435F00D4C61C /* LeagueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9C2A0E435F00D4C61C /* LeagueRepository.swift */; };
+		3B745AA02A0E437100D4C61C /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9F2A0E437100D4C61C /* TeamRepository.swift */; };
+		3B745AA12A0E437100D4C61C /* TeamRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9F2A0E437100D4C61C /* TeamRepository.swift */; };
+		3B745AA32A0E43D600D4C61C /* SelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AA22A0E43D600D4C61C /* SelectorViewModel.swift */; };
+		3B745AA42A0E43D600D4C61C /* SelectorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AA22A0E43D600D4C61C /* SelectorViewModel.swift */; };
 		3B745AAB2A0E45B100D4C61C /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AAA2A0E45B100D4C61C /* LeagueModel.swift */; };
 		3B745AAC2A0E45B100D4C61C /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AAA2A0E45B100D4C61C /* LeagueModel.swift */; };
 		3B745AAE2A0E45B800D4C61C /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AAD2A0E45B800D4C61C /* TeamModel.swift */; };
 		3B745AAF2A0E45B800D4C61C /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AAD2A0E45B800D4C61C /* TeamModel.swift */; };
-		3B745AB12A0E460C00D4C61C /* AppEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB02A0E460C00D4C61C /* AppEnum.swift */; };
-		3B745AB22A0E460C00D4C61C /* AppEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB02A0E460C00D4C61C /* AppEnum.swift */; };
+		3B745AB12A0E460C00D4C61C /* NetworkEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB02A0E460C00D4C61C /* NetworkEnum.swift */; };
+		3B745AB22A0E460C00D4C61C /* NetworkEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB02A0E460C00D4C61C /* NetworkEnum.swift */; };
 		3B745AB42A0E463E00D4C61C /* RequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB32A0E463E00D4C61C /* RequestInfo.swift */; };
 		3B745AB52A0E463E00D4C61C /* RequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB32A0E463E00D4C61C /* RequestInfo.swift */; };
 		3B745AC42A0E86D600D4C61C /* Strings+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AC32A0E86D600D4C61C /* Strings+Extension.swift */; };
@@ -79,16 +75,14 @@
 		3B745A7D2A0E3CCE00D4C61C /* FDJ-ExcerciceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FDJ-ExcerciceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B745A812A0E3CCE00D4C61C /* FDJ_ExcerciceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJ_ExcerciceUITests.swift; sourceTree = "<group>"; };
 		3B745A832A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJ_ExcerciceUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		3B745A922A0E411300D4C61C /* LeagueSelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectorView.swift; sourceTree = "<group>"; };
-		3B745A952A0E417700D4C61C /* TeamSelectorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamSelectorView.swift; sourceTree = "<group>"; };
+		3B745A922A0E411300D4C61C /* SelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorView.swift; sourceTree = "<group>"; };
 		3B745A992A0E433500D4C61C /* AppNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNetwork.swift; sourceTree = "<group>"; };
-		3B745A9C2A0E435F00D4C61C /* LeagueSelectorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectorRepository.swift; sourceTree = "<group>"; };
-		3B745A9F2A0E437100D4C61C /* TeamSelectorRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSelectorRepository.swift; sourceTree = "<group>"; };
-		3B745AA22A0E43D600D4C61C /* LeagueSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueSelectorViewModel.swift; sourceTree = "<group>"; };
-		3B745AA52A0E43E600D4C61C /* TeamSelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamSelectorViewModel.swift; sourceTree = "<group>"; };
+		3B745A9C2A0E435F00D4C61C /* LeagueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepository.swift; sourceTree = "<group>"; };
+		3B745A9F2A0E437100D4C61C /* TeamRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRepository.swift; sourceTree = "<group>"; };
+		3B745AA22A0E43D600D4C61C /* SelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewModel.swift; sourceTree = "<group>"; };
 		3B745AAA2A0E45B100D4C61C /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		3B745AAD2A0E45B800D4C61C /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
-		3B745AB02A0E460C00D4C61C /* AppEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnum.swift; sourceTree = "<group>"; };
+		3B745AB02A0E460C00D4C61C /* NetworkEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnum.swift; sourceTree = "<group>"; };
 		3B745AB32A0E463E00D4C61C /* RequestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInfo.swift; sourceTree = "<group>"; };
 		3B745AC32A0E86D600D4C61C /* Strings+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extension.swift"; sourceTree = "<group>"; };
 		8E2BB398BCC9D0769A24AC0B /* Pods-FDJ-Excercice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDJ-Excercice.release.xcconfig"; path = "Target Support Files/Pods-FDJ-Excercice/Pods-FDJ-Excercice.release.xcconfig"; sourceTree = "<group>"; };
@@ -135,6 +129,27 @@
 			path = SwiftGen;
 			sourceTree = "<group>";
 		};
+		3B03EAE62A0E91090082FC5E /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3B745A6B2A0E3CCE00D4C61C /* FDJ_Excercice.entitlements */,
+				3B745A652A0E3CCC00D4C61C /* FDJ_ExcerciceApp.swift */,
+				3B03EAE12A0E8E080082FC5E /* Localizable.strings */,
+				3B745A6C2A0E3CCE00D4C61C /* Preview Content */,
+				3B03EAE22A0E8EE70082FC5E /* SwiftGen */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		3B03EAE72A0EA6480082FC5E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3B745A9C2A0E435F00D4C61C /* LeagueRepository.swift */,
+				3B745A9F2A0E437100D4C61C /* TeamRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		3B745A592A0E3CCC00D4C61C = {
 			isa = PBXGroup;
 			children = (
@@ -161,14 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				3B745A692A0E3CCE00D4C61C /* Assets.xcassets */,
+				3B03EAE62A0E91090082FC5E /* Configuration */,
 				3B745AA82A0E457300D4C61C /* Data */,
-				3B745A6B2A0E3CCE00D4C61C /* FDJ_Excercice.entitlements */,
-				3B745A652A0E3CCC00D4C61C /* FDJ_ExcerciceApp.swift */,
 				3B745A902A0E40C400D4C61C /* LigueSelector */,
-				3B03EAE12A0E8E080082FC5E /* Localizable.strings */,
-				3B745A6C2A0E3CCE00D4C61C /* Preview Content */,
-				3B03EAE22A0E8EE70082FC5E /* SwiftGen */,
-				3B745A912A0E40D400D4C61C /* TeamSelector */,
 				3B745AC22A0E86BC00D4C61C /* Tools */,
 			);
 			path = "FDJ-Excercice";
@@ -202,26 +212,16 @@
 		3B745A902A0E40C400D4C61C /* LigueSelector */ = {
 			isa = PBXGroup;
 			children = (
-				3B745A922A0E411300D4C61C /* LeagueSelectorView.swift */,
-				3B745A9C2A0E435F00D4C61C /* LeagueSelectorRepository.swift */,
-				3B745AA22A0E43D600D4C61C /* LeagueSelectorViewModel.swift */,
+				3B745A922A0E411300D4C61C /* SelectorView.swift */,
+				3B745AA22A0E43D600D4C61C /* SelectorViewModel.swift */,
 			);
 			path = LigueSelector;
-			sourceTree = "<group>";
-		};
-		3B745A912A0E40D400D4C61C /* TeamSelector */ = {
-			isa = PBXGroup;
-			children = (
-				3B745A952A0E417700D4C61C /* TeamSelectorView.swift */,
-				3B745A9F2A0E437100D4C61C /* TeamSelectorRepository.swift */,
-				3B745AA52A0E43E600D4C61C /* TeamSelectorViewModel.swift */,
-			);
-			path = TeamSelector;
 			sourceTree = "<group>";
 		};
 		3B745A982A0E42D200D4C61C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3B745AB02A0E460C00D4C61C /* NetworkEnum.swift */,
 				3B745A992A0E433500D4C61C /* AppNetwork.swift */,
 				3B745AB32A0E463E00D4C61C /* RequestInfo.swift */,
 			);
@@ -231,9 +231,9 @@
 		3B745AA82A0E457300D4C61C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3B745AB02A0E460C00D4C61C /* AppEnum.swift */,
 				3B745AA92A0E45A300D4C61C /* Model */,
 				3B745A982A0E42D200D4C61C /* Network */,
+				3B03EAE72A0EA6480082FC5E /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -536,18 +536,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B745A962A0E417700D4C61C /* TeamSelectorView.swift in Sources */,
 				3B745AB42A0E463E00D4C61C /* RequestInfo.swift in Sources */,
-				3B745A9D2A0E435F00D4C61C /* LeagueSelectorRepository.swift in Sources */,
+				3B745A9D2A0E435F00D4C61C /* LeagueRepository.swift in Sources */,
 				3B745AC42A0E86D600D4C61C /* Strings+Extension.swift in Sources */,
 				3B03EAE42A0E8EE70082FC5E /* Strings+Generated.swift in Sources */,
-				3B745AA62A0E43E600D4C61C /* TeamSelectorViewModel.swift in Sources */,
-				3B745AA32A0E43D600D4C61C /* LeagueSelectorViewModel.swift in Sources */,
-				3B745AA02A0E437100D4C61C /* TeamSelectorRepository.swift in Sources */,
-				3B745A932A0E411300D4C61C /* LeagueSelectorView.swift in Sources */,
+				3B745AA32A0E43D600D4C61C /* SelectorViewModel.swift in Sources */,
+				3B745AA02A0E437100D4C61C /* TeamRepository.swift in Sources */,
+				3B745A932A0E411300D4C61C /* SelectorView.swift in Sources */,
 				3B745AAE2A0E45B800D4C61C /* TeamModel.swift in Sources */,
 				3B745A9A2A0E433500D4C61C /* AppNetwork.swift in Sources */,
-				3B745AB12A0E460C00D4C61C /* AppEnum.swift in Sources */,
+				3B745AB12A0E460C00D4C61C /* NetworkEnum.swift in Sources */,
 				3B745AAB2A0E45B100D4C61C /* LeagueModel.swift in Sources */,
 				3B745A662A0E3CCC00D4C61C /* FDJ_ExcerciceApp.swift in Sources */,
 			);
@@ -557,16 +555,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B745AA42A0E43D600D4C61C /* LeagueSelectorViewModel.swift in Sources */,
+				3B745AA42A0E43D600D4C61C /* SelectorViewModel.swift in Sources */,
 				3B745A9B2A0E433500D4C61C /* AppNetwork.swift in Sources */,
 				3B03EAE52A0E8EE70082FC5E /* Strings+Generated.swift in Sources */,
 				3B745AAF2A0E45B800D4C61C /* TeamModel.swift in Sources */,
 				3B745AB52A0E463E00D4C61C /* RequestInfo.swift in Sources */,
-				3B745AA72A0E43E600D4C61C /* TeamSelectorViewModel.swift in Sources */,
-				3B745AB22A0E460C00D4C61C /* AppEnum.swift in Sources */,
-				3B745A9E2A0E435F00D4C61C /* LeagueSelectorRepository.swift in Sources */,
+				3B745AB22A0E460C00D4C61C /* NetworkEnum.swift in Sources */,
+				3B745A9E2A0E435F00D4C61C /* LeagueRepository.swift in Sources */,
 				3B745AC52A0E86D600D4C61C /* Strings+Extension.swift in Sources */,
-				3B745AA12A0E437100D4C61C /* TeamSelectorRepository.swift in Sources */,
+				3B745AA12A0E437100D4C61C /* TeamRepository.swift in Sources */,
 				3B745A782A0E3CCE00D4C61C /* FDJ_ExcerciceTests.swift in Sources */,
 				3B745AAC2A0E45B100D4C61C /* LeagueModel.swift in Sources */,
 			);
@@ -576,9 +573,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B745A972A0E417700D4C61C /* TeamSelectorView.swift in Sources */,
 				3B745A822A0E3CCE00D4C61C /* FDJ_ExcerciceUITests.swift in Sources */,
-				3B745A942A0E411300D4C61C /* LeagueSelectorView.swift in Sources */,
+				3B745A942A0E411300D4C61C /* SelectorView.swift in Sources */,
 				3B745A842A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -727,10 +723,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "FDJ-Excercice/FDJ_Excercice.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FDJ-Excercice/Configuration/FDJ_Excercice.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FDJ-Excercice/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FDJ-Excercice/Configuration/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -764,10 +760,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "FDJ-Excercice/FDJ_Excercice.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "FDJ-Excercice/Configuration/FDJ_Excercice.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"FDJ-Excercice/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FDJ-Excercice/Configuration/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;

@@ -15,8 +15,8 @@ struct LeagueModel: Decodable, Hashable {
     
     init() {
         self.strLeague = "Ligue 1"
-        self.idLeague = "1"
-        self.strSport = "soccer"
+        self.idLeague = "4334"
+        self.strSport = "Soccer"
     }
 }
 

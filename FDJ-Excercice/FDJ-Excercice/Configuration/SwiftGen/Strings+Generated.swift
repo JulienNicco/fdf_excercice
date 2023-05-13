@@ -10,7 +10,8 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 internal enum Strings {
-  internal static let titleScreenLeagueSelector = Strings.tr("Localizable", "titleScreenLeagueSelector", fallback: "Select your league")
+  internal static let placeHolderSearchBar = Strings.tr("Localizable", "placeHolderSearchBar", fallback: "League name")
+  internal static let titleScreenLeagueSelector = Strings.tr("Localizable", "titleScreenLeagueSelector", fallback: "Search your team")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces

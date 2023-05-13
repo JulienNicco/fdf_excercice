@@ -11,7 +11,7 @@ import SwiftUI
 struct FDJ_ExcerciceApp: App {
     var body: some Scene {
         WindowGroup {
-            LeagueSelectorView(vm: LeagueSelectorViewModel())
+            SelectorView(vm: SelectorViewModel())
         }
     }
 }

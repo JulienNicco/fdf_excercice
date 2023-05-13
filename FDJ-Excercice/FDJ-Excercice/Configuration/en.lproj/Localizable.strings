@@ -7,4 +7,5 @@
 */
 
 
-"titleScreenLeagueSelector" = "Select your league";
+"titleScreenLeagueSelector" = "Search your team";
+"placeHolderSearchBar" = "League name";
