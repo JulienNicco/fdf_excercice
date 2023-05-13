@@ -25,7 +25,9 @@ struct SelectorView: View {
                 }
             }
         }
-        .searchable(text: $vm.searchText, prompt: Strings.placeHolderSearchBar)
+        .searchable(text: $vm.searchText,
+                    placement: .navigationBarDrawer(displayMode: .always),
+                    prompt: Strings.placeHolderSearchBar)
     }
     
     func leaguesSuggestionListView() -> some View {
@@ -62,22 +64,6 @@ struct SelectorView: View {
             .padding(.horizontal, 15)
         }
     }
-    
-//    func teamsListView() -> some View {
-//        ScrollView {
-//            ForEach(vm.teams, id: \.self) { team in
-//                NavigationLink {
-//                    DetailTeamView(team:team)
-//                } label: {
-//                    VStack (alignment: .leading){
-//                        Text(team.strTeam)
-//                        Spacer()
-//                    }
-//                    .frame(maxWidth: .infinity)
-//                }
-//            }
-//        }
-//    }
 }
 
 struct LeagueSelectorView_Previews: PreviewProvider {

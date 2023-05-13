@@ -21,8 +21,6 @@
 		3B745A842A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A832A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift */; };
 		3B745A932A0E411300D4C61C /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A922A0E411300D4C61C /* SelectorView.swift */; };
 		3B745A942A0E411300D4C61C /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A922A0E411300D4C61C /* SelectorView.swift */; };
-		3B745A962A0E417700D4C61C /* DetailTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A952A0E417700D4C61C /* DetailTeamView.swift */; };
-		3B745A972A0E417700D4C61C /* DetailTeamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A952A0E417700D4C61C /* DetailTeamView.swift */; };
 		3B745A9A2A0E433500D4C61C /* AppNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A992A0E433500D4C61C /* AppNetwork.swift */; };
 		3B745A9B2A0E433500D4C61C /* AppNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A992A0E433500D4C61C /* AppNetwork.swift */; };
 		3B745A9D2A0E435F00D4C61C /* LeagueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9C2A0E435F00D4C61C /* LeagueRepository.swift */; };
@@ -35,8 +33,8 @@
 		3B745AAC2A0E45B100D4C61C /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AAA2A0E45B100D4C61C /* LeagueModel.swift */; };
 		3B745AAE2A0E45B800D4C61C /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AAD2A0E45B800D4C61C /* TeamModel.swift */; };
 		3B745AAF2A0E45B800D4C61C /* TeamModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AAD2A0E45B800D4C61C /* TeamModel.swift */; };
-		3B745AB12A0E460C00D4C61C /* AppEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB02A0E460C00D4C61C /* AppEnum.swift */; };
-		3B745AB22A0E460C00D4C61C /* AppEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB02A0E460C00D4C61C /* AppEnum.swift */; };
+		3B745AB12A0E460C00D4C61C /* NetworkEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB02A0E460C00D4C61C /* NetworkEnum.swift */; };
+		3B745AB22A0E460C00D4C61C /* NetworkEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB02A0E460C00D4C61C /* NetworkEnum.swift */; };
 		3B745AB42A0E463E00D4C61C /* RequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB32A0E463E00D4C61C /* RequestInfo.swift */; };
 		3B745AB52A0E463E00D4C61C /* RequestInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AB32A0E463E00D4C61C /* RequestInfo.swift */; };
 		3B745AC42A0E86D600D4C61C /* Strings+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745AC32A0E86D600D4C61C /* Strings+Extension.swift */; };
@@ -78,14 +76,13 @@
 		3B745A812A0E3CCE00D4C61C /* FDJ_ExcerciceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJ_ExcerciceUITests.swift; sourceTree = "<group>"; };
 		3B745A832A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJ_ExcerciceUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3B745A922A0E411300D4C61C /* SelectorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorView.swift; sourceTree = "<group>"; };
-		3B745A952A0E417700D4C61C /* DetailTeamView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTeamView.swift; sourceTree = "<group>"; };
 		3B745A992A0E433500D4C61C /* AppNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNetwork.swift; sourceTree = "<group>"; };
 		3B745A9C2A0E435F00D4C61C /* LeagueRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueRepository.swift; sourceTree = "<group>"; };
 		3B745A9F2A0E437100D4C61C /* TeamRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRepository.swift; sourceTree = "<group>"; };
 		3B745AA22A0E43D600D4C61C /* SelectorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectorViewModel.swift; sourceTree = "<group>"; };
 		3B745AAA2A0E45B100D4C61C /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
 		3B745AAD2A0E45B800D4C61C /* TeamModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamModel.swift; sourceTree = "<group>"; };
-		3B745AB02A0E460C00D4C61C /* AppEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnum.swift; sourceTree = "<group>"; };
+		3B745AB02A0E460C00D4C61C /* NetworkEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkEnum.swift; sourceTree = "<group>"; };
 		3B745AB32A0E463E00D4C61C /* RequestInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestInfo.swift; sourceTree = "<group>"; };
 		3B745AC32A0E86D600D4C61C /* Strings+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Strings+Extension.swift"; sourceTree = "<group>"; };
 		8E2BB398BCC9D0769A24AC0B /* Pods-FDJ-Excercice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDJ-Excercice.release.xcconfig"; path = "Target Support Files/Pods-FDJ-Excercice/Pods-FDJ-Excercice.release.xcconfig"; sourceTree = "<group>"; };
@@ -182,7 +179,6 @@
 				3B03EAE62A0E91090082FC5E /* Configuration */,
 				3B745AA82A0E457300D4C61C /* Data */,
 				3B745A902A0E40C400D4C61C /* LigueSelector */,
-				3B745A912A0E40D400D4C61C /* TeamSelector */,
 				3B745AC22A0E86BC00D4C61C /* Tools */,
 			);
 			path = "FDJ-Excercice";
@@ -222,17 +218,10 @@
 			path = LigueSelector;
 			sourceTree = "<group>";
 		};
-		3B745A912A0E40D400D4C61C /* TeamSelector */ = {
-			isa = PBXGroup;
-			children = (
-				3B745A952A0E417700D4C61C /* DetailTeamView.swift */,
-			);
-			path = TeamSelector;
-			sourceTree = "<group>";
-		};
 		3B745A982A0E42D200D4C61C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3B745AB02A0E460C00D4C61C /* NetworkEnum.swift */,
 				3B745A992A0E433500D4C61C /* AppNetwork.swift */,
 				3B745AB32A0E463E00D4C61C /* RequestInfo.swift */,
 			);
@@ -242,7 +231,6 @@
 		3B745AA82A0E457300D4C61C /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3B745AB02A0E460C00D4C61C /* AppEnum.swift */,
 				3B745AA92A0E45A300D4C61C /* Model */,
 				3B745A982A0E42D200D4C61C /* Network */,
 				3B03EAE72A0EA6480082FC5E /* Repository */,
@@ -548,7 +536,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B745A962A0E417700D4C61C /* DetailTeamView.swift in Sources */,
 				3B745AB42A0E463E00D4C61C /* RequestInfo.swift in Sources */,
 				3B745A9D2A0E435F00D4C61C /* LeagueRepository.swift in Sources */,
 				3B745AC42A0E86D600D4C61C /* Strings+Extension.swift in Sources */,
@@ -558,7 +545,7 @@
 				3B745A932A0E411300D4C61C /* SelectorView.swift in Sources */,
 				3B745AAE2A0E45B800D4C61C /* TeamModel.swift in Sources */,
 				3B745A9A2A0E433500D4C61C /* AppNetwork.swift in Sources */,
-				3B745AB12A0E460C00D4C61C /* AppEnum.swift in Sources */,
+				3B745AB12A0E460C00D4C61C /* NetworkEnum.swift in Sources */,
 				3B745AAB2A0E45B100D4C61C /* LeagueModel.swift in Sources */,
 				3B745A662A0E3CCC00D4C61C /* FDJ_ExcerciceApp.swift in Sources */,
 			);
@@ -573,7 +560,7 @@
 				3B03EAE52A0E8EE70082FC5E /* Strings+Generated.swift in Sources */,
 				3B745AAF2A0E45B800D4C61C /* TeamModel.swift in Sources */,
 				3B745AB52A0E463E00D4C61C /* RequestInfo.swift in Sources */,
-				3B745AB22A0E460C00D4C61C /* AppEnum.swift in Sources */,
+				3B745AB22A0E460C00D4C61C /* NetworkEnum.swift in Sources */,
 				3B745A9E2A0E435F00D4C61C /* LeagueRepository.swift in Sources */,
 				3B745AC52A0E86D600D4C61C /* Strings+Extension.swift in Sources */,
 				3B745AA12A0E437100D4C61C /* TeamRepository.swift in Sources */,
@@ -586,7 +573,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B745A972A0E417700D4C61C /* DetailTeamView.swift in Sources */,
 				3B745A822A0E3CCE00D4C61C /* FDJ_ExcerciceUITests.swift in Sources */,
 				3B745A942A0E411300D4C61C /* SelectorView.swift in Sources */,
 				3B745A842A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift in Sources */,

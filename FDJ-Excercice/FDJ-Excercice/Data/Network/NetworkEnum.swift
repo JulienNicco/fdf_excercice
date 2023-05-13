@@ -1,5 +1,5 @@
 //
-//  AppEnum.swift
+//  NetworkEnum.swift
 //  FDJ-Excercice
 //
 //  Created by Julien Nicco on 12/05/2023.
@@ -17,7 +17,7 @@ enum ApiUrl: String {
     case league = "all_leagues.php"
     case team = "lookup_all_teams.php"
     
-    var stringUrl: String {
+    var toString: String {
         switch self {
         case .baseUrl:
             return self.rawValue
