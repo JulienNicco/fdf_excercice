@@ -22,20 +22,16 @@ final class FDJ_ExcerciceUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    func testTeamDisplaying() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+        Thread.sleep(forTimeInterval: 3)
+        let searchBar = app.navigationBars["_TtGC7SwiftUI32NavigationStackHosting"].searchFields["League name"]
+        searchBar.tap()
+        searchBar.typeText("Ligue 1")
+        app.scrollViews.otherElements.buttons["French Ligue 1"].tap()
+        Thread.sleep(forTimeInterval: 3)
+        XCTAssertTrue(app.images.element(boundBy: 0).exists, "La première image n'est pas visible.")
     }
 }

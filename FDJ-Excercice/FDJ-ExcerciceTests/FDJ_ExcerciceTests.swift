@@ -16,20 +16,39 @@ final class FDJ_ExcerciceTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        measure {
-            // Put the code you want to measure the time of here.
+    
+    func testMakeRequest() throws {
+        let requestInfo = RequestInfo(url: .team, method: .get, parameters: ["id":61])
+        if let urlRequest = AppNetwork().makeRequestFrom(requestInfo) {
+            XCTAssertEqual(urlRequest.url?.absoluteString, "https://www.thesportsdb.com/api/v1/json/50130162/lookup_all_teams.php?id=61")
+            XCTAssertEqual(urlRequest.httpMethod, "GET")
+            XCTAssertNil(urlRequest.httpBody)
+        } else {
+            XCTFail("La création de la requête a échoué")
         }
     }
+    
+    func testSortingTeam() throws {
+        let selectorVm = SelectorViewModel()
+        var team1 = TeamModel()
+        team1.strTeam = "Ajaccio"
+        var team2 = TeamModel()
+        team2.strTeam = "PSG"
+        var team3 = TeamModel()
+        team3.strTeam = "Marseille"
+        var team4 = TeamModel()
+        team4.strTeam = "Lyon"
+        var team5 = TeamModel()
+        team5.strTeam = "Toulouse"
+        var listTeams = [team1, team2, team3]
+        selectorVm.setTeams(listTeams)
+        
+        let teamNames = listTeams.enumerated()
+            .filter { $0.offset % 2 == 0 }
+            .map { $0.element }
+            .sorted { $0.strTeam > $1.strTeam }
 
+        let isSorted = selectorVm.teams == teamNames
+        XCTAssertTrue(isSorted, "Tri KO")
+    }
 }
