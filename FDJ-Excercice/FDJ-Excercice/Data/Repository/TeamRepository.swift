@@ -16,7 +16,7 @@ struct TeamRepository: TeamRepositoryProtocol {
         let requestInfo = RequestInfo(url: .team, method: .get, parameters: ["id":league.idLeague])
         return AppNetwork().send(requestInfo)
             .map { (value: TeamResponse) -> [TeamModel] in
-                return value.teams.sorted { $0.strTeam > $1.strTeam }
+                return value.teams.sorted { $0.strTeam < $1.strTeam }
             }
             .eraseToAnyPublisher()
     }

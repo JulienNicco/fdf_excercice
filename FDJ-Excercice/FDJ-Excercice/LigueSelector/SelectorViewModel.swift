@@ -55,6 +55,13 @@ class SelectorViewModel: ObservableObject {
         .store(in: &cancellable)
     }
     
+    func setTeams(_ teams: [TeamModel]) {
+        self.teams = teams.enumerated()
+            .filter { $0.offset % 2 == 0 }
+            .map { $0.element }
+            .sorted { $0.strTeam > $1.strTeam }
+    }
+    
     func refreshLeague() {
         isLoading = true
         self.leagueRepo.getAll()
@@ -79,9 +86,7 @@ class SelectorViewModel: ObservableObject {
                 self.isLoading = false
         } receiveValue: { [weak self] team in
             guard let self = self else { return }
-            self.teams = team.enumerated()
-                .filter { $0.offset % 2 == 1 }
-                .map { $0.element }
+            self.setTeams(team)
         }
         .store(in: &cancellable)
     }

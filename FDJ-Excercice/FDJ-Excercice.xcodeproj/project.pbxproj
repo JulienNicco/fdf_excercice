@@ -20,7 +20,6 @@
 		3B745A822A0E3CCE00D4C61C /* FDJ_ExcerciceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A812A0E3CCE00D4C61C /* FDJ_ExcerciceUITests.swift */; };
 		3B745A842A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A832A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift */; };
 		3B745A932A0E411300D4C61C /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A922A0E411300D4C61C /* SelectorView.swift */; };
-		3B745A942A0E411300D4C61C /* SelectorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A922A0E411300D4C61C /* SelectorView.swift */; };
 		3B745A9A2A0E433500D4C61C /* AppNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A992A0E433500D4C61C /* AppNetwork.swift */; };
 		3B745A9B2A0E433500D4C61C /* AppNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A992A0E433500D4C61C /* AppNetwork.swift */; };
 		3B745A9D2A0E435F00D4C61C /* LeagueRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B745A9C2A0E435F00D4C61C /* LeagueRepository.swift */; };
@@ -574,7 +573,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B745A822A0E3CCE00D4C61C /* FDJ_ExcerciceUITests.swift in Sources */,
-				3B745A942A0E411300D4C61C /* SelectorView.swift in Sources */,
 				3B745A842A0E3CCE00D4C61C /* FDJ_ExcerciceUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -737,8 +735,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -747,10 +744,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perso.FDJ-Excercice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -774,8 +773,7 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -784,10 +782,12 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.perso.FDJ-Excercice";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

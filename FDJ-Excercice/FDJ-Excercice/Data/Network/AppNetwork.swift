@@ -16,13 +16,14 @@ struct AppNetwork {
         
         return URLSession.shared.dataTaskPublisher(for: request)
             .mapError { error -> Error in
+                debugPrint("Debug - AppNetwork - Request response error : \(error)\n")
                 return error
             }
             .flatMap { data, response -> AnyPublisher<Data, Error> in
                 guard let httpResponse = response as? HTTPURLResponse, !(200...299).contains(httpResponse.statusCode) else {
                     return Just(data).setFailureType(to: Error.self).eraseToAnyPublisher()
                 }
-                print("Debug - AppNetwork - Request response error : \(httpResponse.statusCode)\n")
+                debugPrint("Debug - AppNetwork - Request response error : \(httpResponse.statusCode)\n")
                 
                 let error = NSError(domain: "HTTP Error", code: httpResponse.statusCode, userInfo: nil)
                 return Fail(error: error).eraseToAnyPublisher()
