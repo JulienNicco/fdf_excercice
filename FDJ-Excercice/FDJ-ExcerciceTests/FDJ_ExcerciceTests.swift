@@ -24,7 +24,7 @@ final class FDJ_ExcerciceTests: XCTestCase {
             XCTAssertEqual(urlRequest.httpMethod, "GET")
             XCTAssertNil(urlRequest.httpBody)
         } else {
-            XCTFail("La création de la requête a échoué")
+            XCTFail("makeRequest method failed")
         }
     }
     
@@ -40,7 +40,7 @@ final class FDJ_ExcerciceTests: XCTestCase {
         team4.strTeam = "Lyon"
         var team5 = TeamModel()
         team5.strTeam = "Toulouse"
-        var listTeams = [team1, team2, team3]
+        let listTeams = [team1, team2, team3]
         selectorVm.setTeams(listTeams)
         
         let teamNames = listTeams.enumerated()
@@ -49,6 +49,6 @@ final class FDJ_ExcerciceTests: XCTestCase {
             .sorted { $0.strTeam > $1.strTeam }
 
         let isSorted = selectorVm.teams == teamNames
-        XCTAssertTrue(isSorted, "Tri KO")
+        XCTAssertTrue(isSorted, "Sorting Team KO")
     }
 }
