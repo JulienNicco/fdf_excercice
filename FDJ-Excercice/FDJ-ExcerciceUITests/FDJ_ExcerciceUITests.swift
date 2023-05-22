@@ -27,11 +27,11 @@ final class FDJ_ExcerciceUITests: XCTestCase {
         let app = XCUIApplication()
         app.launch()
         Thread.sleep(forTimeInterval: 3)
-        let searchBar = app.navigationBars["_TtGC7SwiftUI32NavigationStackHosting"].searchFields["League name"]
+        let searchBar = app.navigationBars["_TtGC7SwiftUI19UIHosting"].searchFields["League name"]
         searchBar.tap()
         searchBar.typeText("Ligue 1")
         app.scrollViews.otherElements.buttons["French Ligue 1"].tap()
         Thread.sleep(forTimeInterval: 3)
-        XCTAssertTrue(app.images.element(boundBy: 0).exists, "La première image n'est pas visible.")
+        XCTAssertTrue(app.images.element(boundBy: 0).exists, "First image not showing")
     }
 }

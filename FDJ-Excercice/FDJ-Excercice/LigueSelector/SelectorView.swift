@@ -12,7 +12,7 @@ struct SelectorView: View {
     @StateObject var vm: SelectorViewModel
     
     var body: some View {
-        NavigationStack {
+        NavigationView {
             VStack {
                 if vm.isLoading {
                     ProgressView()
