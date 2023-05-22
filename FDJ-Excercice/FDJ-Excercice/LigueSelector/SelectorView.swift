@@ -16,6 +16,8 @@ struct SelectorView: View {
             VStack {
                 if vm.isLoading {
                     ProgressView()
+                } else if vm.failed {
+                    Text(Strings.errorMessage)
                 } else if let _ = vm.selectedLeague {
                     teamsListView()
                 } else {

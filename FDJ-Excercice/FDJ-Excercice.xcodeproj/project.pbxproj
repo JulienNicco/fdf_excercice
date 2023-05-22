@@ -275,10 +275,10 @@
 			buildConfigurationList = 3B745A872A0E3CCE00D4C61C /* Build configuration list for PBXNativeTarget "FDJ-Excercice" */;
 			buildPhases = (
 				54BC1AECE260C3608B59D44A /* [CP] Check Pods Manifest.lock */,
+				3B03EADD2A0E894A0082FC5E /* Run SwiftGen */,
 				3B745A5E2A0E3CCC00D4C61C /* Sources */,
 				3B745A5F2A0E3CCC00D4C61C /* Frameworks */,
 				3B745A602A0E3CCC00D4C61C /* Resources */,
-				3B03EADD2A0E894A0082FC5E /* Run SwiftGen */,
 				017652A86B301B87CF44E639 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
@@ -458,7 +458,6 @@
 		};
 		3B03EADD2A0E894A0082FC5E /* Run SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);

@@ -18,6 +18,7 @@ class SelectorViewModel: ObservableObject {
     @Published var selectedLeague: LeagueModel?
     @Published var searchText = ""
     @Published var isLoading = false
+    @Published var failed = false
     
     init(leagueRepository: LeagueRepository = LeagueRepository(),
          teamRepository: TeamRepository = TeamRepository(),
@@ -64,11 +65,18 @@ class SelectorViewModel: ObservableObject {
     
     func refreshLeague() {
         isLoading = true
+        failed = false
         self.leagueRepo.getAll()
             .receive(on: RunLoop.main)
             .sink { [weak self] result in
                 guard let self = self else { return }
                 self.isLoading = false
+                switch result {
+                case .failure:
+                    self.failed = true
+                case .finished:
+                    break
+                }
         } receiveValue: { [weak self] leagues in
             guard let self = self else { return }
             self.allLeagues = leagues
@@ -79,11 +87,18 @@ class SelectorViewModel: ObservableObject {
     
     func getTeams(for league:LeagueModel) {
         isLoading = true
+        failed = false
         self.teamRepo.getByLeague(league)
             .receive(on: RunLoop.main)
             .sink { [weak self] result in
                 guard let self = self else { return }
                 self.isLoading = false
+                switch result {
+                case .failure:
+                    self.failed = true
+                case .finished:
+                    break
+                }
         } receiveValue: { [weak self] team in
             guard let self = self else { return }
             self.setTeams(team)
