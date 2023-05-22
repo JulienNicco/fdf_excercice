@@ -65,6 +65,7 @@
 		27144F7E33318859A5E12144 /* Pods-FDJ-ExcerciceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FDJ-ExcerciceTests.debug.xcconfig"; path = "Target Support Files/Pods-FDJ-ExcerciceTests/Pods-FDJ-ExcerciceTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B03EAE02A0E8E080082FC5E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		3B03EAE32A0E8EE70082FC5E /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		3B642E012A1B64720011A918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		3B745A622A0E3CCC00D4C61C /* FDJ-Excercice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FDJ-Excercice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B745A652A0E3CCC00D4C61C /* FDJ_ExcerciceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDJ_ExcerciceApp.swift; sourceTree = "<group>"; };
 		3B745A692A0E3CCE00D4C61C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,6 +172,7 @@
 		3B745A642A0E3CCC00D4C61C /* FDJ-Excercice */ = {
 			isa = PBXGroup;
 			children = (
+				3B642E012A1B64720011A918 /* Info.plist */,
 				3B745A692A0E3CCE00D4C61C /* Assets.xcassets */,
 				3B03EAE62A0E91090082FC5E /* Configuration */,
 				3B745AA82A0E457300D4C61C /* Data */,
@@ -714,6 +716,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FDJ-Excercice/Configuration/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FDJ-Excercice/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -752,6 +755,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FDJ-Excercice/Configuration/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "FDJ-Excercice/Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
