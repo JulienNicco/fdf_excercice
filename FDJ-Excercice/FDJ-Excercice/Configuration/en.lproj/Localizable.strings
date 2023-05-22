@@ -7,5 +7,5 @@
 */
 
 
-"titleScreenLeagueSelector" = "Search your team";
 "placeHolderSearchBar" = "League name";
+"errorMessage" = "Les données n'ont pas pu être récupérées";
